@@ -1,20 +1,20 @@
 <template>
-  <div class="home">
+  <div class="report">
     <Common />
-    <Index />
+    <ReportingProcess />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Common from '@/components/Common.vue'
-import Index from '@/components/Index.vue'
+import ReportingProcess from '@/components/ReportingProcess.vue'
 
 export default {
-  name: 'Home',
+  name: 'report',
   components: {
     Common,
-    Index
+    ReportingProcess
   }
 }
 </script>

@@ -1,0 +1,173 @@
+@mixin mobile-only {
+    @media (max-width: 540px) {
+        @content;
+    }
+}
+
+body {
+    @include mobile-only {
+        .header {
+            height: 112px;
+            background-size: 100px 100px, cover;
+        }
+        .header .top ul {
+            width: 100%;
+            float: none;
+        }
+        .header .top li.guanwang {
+            background-size: 10px 10px;
+        }
+        .header .top li.dengji {
+            background-size: 10px 10px;
+        }
+        .header .top li.jiaofei {
+            background-size: 10px 10px;
+        }
+        .header .top li a {
+            font-size: 12px;
+        }
+        .header .logo {
+            width: 40%;
+            margin-left: 0px;
+        }
+        .header .logo .logo1 {
+            width: 60%;
+            height: auto;
+        }
+        .header .logo .logo2 {
+            width: 30%;
+            height: auto;
+        }
+        .header .login {
+            width: 59%;
+            ;
+            margin-top: 0px;
+        }
+        .header .login button {
+            width: 89px;
+            height: 20px;
+            margin-left: 10px;
+        }
+        .layer1 {
+            width: 90%;
+            margin: 10px auto;
+        }
+        .layer1 ul {
+            width: 100%;
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .layer1 li {
+            float: left;
+            width: 25%;
+        }
+        .layer1 li img {
+            display: block;
+            padding: 10px 9px;
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .layer1 li p {
+            text-align: center;
+            font-size: 12px;
+        }
+        .layer2 {
+            width: 100%;
+        }
+        .layer2 ul {
+            width: 95%;
+            ;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 1px solid #32b16c;
+            padding: 16px 0px 16px 90px;
+            position: relative;
+            z-index: 0;
+            margin-top: -105px;
+        }
+        .layer2 li {
+            height: 29px;
+        }
+        .layer2 li a {
+            display: block;
+            color: #000000;
+            text-align: left;
+            padding: 10px 0px;
+            font-size: 12px;
+        }
+        .layer2 li a:hover {
+            color: #C3AA6A;
+        }
+        .layer2 .xuesheng {
+            width: 20%;
+            height: auto;
+            position: relative;
+            z-index: 9999;
+        }
+        .layer2 .xuesheng img {
+            width: 100%;
+            height: auto;
+        }
+        .layer3 {
+            width: 100%;
+        }
+        .layer3 li {
+            height: 95px;
+            margin: 10px;
+            padding: 5px;
+        }
+        .layer3 li span {
+            width: 20%;
+            height: 50px;
+            margin: 15px;
+            line-height: 30px;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        .layer3 li h1 {
+            font-size: 20px;
+        }
+        .layer3 li p {
+            color: #b7efc2;
+        }
+        .layer4 {
+            width: 100%;
+        }
+        .layer4 li span {
+            width: 21%;
+            line-height: 30px;
+            font-size: 12px;
+            padding-top: 30px;
+        }
+        .layer4 li .right {
+            width: 79%;
+            padding-left: 20px;
+        }
+        .layer4 li .right .bottom {
+            padding-bottom: 10px;
+        }
+        .layer4 li .right .bottom img {
+            width: 30px;
+            height: auto;
+        }
+        .layer4 li .right img {
+            width: 100%;
+        }
+        .layer4 li button.ywc {
+            border-radius: 10px;
+            width: 100px;
+            height: 35px;
+            margin-right: 10px;
+        }
+        .layer4 li button.wwc {
+            border-radius: 10px;
+            width: 100px;
+            height: 35px;
+            margin-right: 10px;
+        }
+    }
+}
